@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+}
+a { 
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.navber {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(17, 16, 16);
+    padding: 8px 12px;
+
+}   
+
+
+.navber__logo {
+    font-size: 25px;
+    font-family: 'Tilt Neon', cursive;
+    color: aliceblue;
+}
+
+.navber__logo i {
+    color: aliceblue;
+
+}
+.navber__body { 
+    display: flex;
+    list-style: none;
+    font-family: 'Tilt Neon', cursive;
+    padding-left: 0%;
+}
+
+.navber__body li {
+    padding: 8px 12px;
+    border-radius: 9px;
+}
+
+.navber__body li:hover {
+    background-color: aqua;
+    
+}
+
+
+.navber__icons {
+    list-style: none;
+    color: aliceblue;
+    display: flex;
+
+}
+
+.navber__icons li {
+    padding: 8px 12px;
+}
+    @media screen and (max-width:.768px) {
+    .navber {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px 24px;
+    
+    }
+    
+
+    .navber__body {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        display: none;
+    
+    }
+    .navber__body li {
+        width: 100%;
+        text-align: center;
+    }
+
+
+    .navber__icons {
+        justify-content: center;
+        width: 100%;
+        padding-left: 0%;
+    }
+    .navber__toogle {
+        position: absolute;
+        right: 32px;
+        font-size: 23px;
+        color: aliceblue;
+        display: none;
+    }
+
+    .navber__toogle {
+        display: block;
+    }
+    .navber__body.active,
+    .navber__icons.active {
+        display: flex;
+
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
